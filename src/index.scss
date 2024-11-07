@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+/* 自定义滚动条样式 */
+.myScroll {
+  overflow: auto;
+}
+.myScroll::-webkit-scrollbar {
+  width: 6px; /* 设置滚动条的宽度 */
+  height: 6px;
+}
+
+.myScroll::-webkit-scrollbar-thumb {
+  background-color: #888; /* 设置滚动条的颜色 */
+  border-radius: 4px; /* 设置滚动条的圆角 */
+}
+
+.myScroll::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* 设置滚动条轨道的颜色 */
+  border-radius: 4px; /* 设置滚动条轨道的圆角 */
+}
+
+// antd-Tabs样式
+.ant-tabs {
+  height: 100% !important;
+  .ant-tabs-content {
+    height: 100% !important;
+  }
+  .ant-tabs-tabpane {
+    height: 100% !important;
+  }
+}
+
+// preview-docx库样式
+.docx {
+  width: 100% !important;
+  padding: 32px !important;
+  margin: 0 !important;
+}
+.docx-wrapper {
+  padding: 0 !important;
+}
+
+.ant-spin-nested-loading {
+  height: 100% !important;
+  width: 100%;
+}
+.ant-spin-container {
+  height: 100% !important;
+}
+
+// markdown 样式
+.markdown-body {
+  background-color: #f7f4f2 !important;
+}
+
+.vditor {
+  height: 100% !important;
+}

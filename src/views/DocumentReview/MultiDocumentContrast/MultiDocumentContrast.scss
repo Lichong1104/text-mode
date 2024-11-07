@@ -1,0 +1,11 @@
+.main_box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  padding: 12px;
+}

@@ -1,0 +1,25 @@
+.doc_box {
+  height: 100%;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.word_view {
+  width: 70%;
+  display: flex;
+  gap: 24px;
+  .view_item {
+    width: 50%;
+  }
+}
+.table {
+  flex: 1;
+  //   padding: 12px;
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px;
+  }
+}

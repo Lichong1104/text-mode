@@ -1,0 +1,43 @@
+.mainBox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  > div {
+    width: 50%;
+    height: 100%;
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .imgBotBar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // .upload {
+      //   border: 1px dotted rgba(128, 128, 128, 0.662);
+      //   padding: 6px 20px;
+      //   display: flex;
+      //   gap: 4px;
+      //   font-size: 18px;
+      //   border-radius: 4px;
+      // }
+    }
+  }
+  .table {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .iframe {
+    height: 100%;
+    overflow: hidden;
+  }
+}
