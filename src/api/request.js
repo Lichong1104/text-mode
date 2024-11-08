@@ -9,8 +9,6 @@ const instance = axios.create({
   timeout: 0, // 请求超时时间
 });
 
-// /api
-
 // 全局请求拦截，发起网络请求之前执行
 instance.interceptors.request.use(
   function (config) {
