@@ -4,8 +4,8 @@ const serverUrl = "http://116.204.67.82:8083";
 
 const instance = axios.create({
   // baseURL: "/contract", // 请求的基础地址
-  // baseURL: serverUrl,
-  baseURL: "/api",
+  baseURL: serverUrl,
+  // baseURL: "/api",
   timeout: 0, // 请求超时时间
 });
 

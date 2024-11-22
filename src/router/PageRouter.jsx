@@ -29,6 +29,15 @@ const UploadPdf = lazy(() => import("../views/PDFParse/UploadPdf/UploadPdf"));
 const VideoCutting = lazy(() => import("../views/VideoCutting/VideoCutting"));
 const VideoDesc = lazy(() => import("../views/VideoDesc/VideoDesc"));
 
+// 年报分析
+const ArPdfView = lazy(() => import("../views/AnnualReportAnalysis/ArPdfView/ArPdfView"));
+const ArWordView = lazy(() => import("../views/AnnualReportAnalysis/ArWordView/ArWordView"));
+
+// 智能训练助理
+const SmartTrainingAssistant = lazy(() =>
+  import("../views/SmartTrainingAssistant/SmartTrainingAssistant")
+);
+
 function PageRouter() {
   return (
     <Suspense fallback={<PageLoading height="100%" />}>
@@ -45,6 +54,9 @@ function PageRouter() {
         <Route path="/upload_pdf" component={UploadPdf} />
         <Route path="/video_cutting" component={VideoCutting} />
         <Route path="/video_desc" component={VideoDesc} />
+        <Route path="/ar_pdf_view" component={ArPdfView} />
+        <Route path="/ar_word_view" component={ArWordView} />
+        <Route path="/smart_training_assistant" component={SmartTrainingAssistant} />
         {/* <Route path="/" exact render={() => <Redirect to="/home" />} /> */}
         <Route path="/" exact render={() => <Redirect to="/contract_parse/task_browse" />} />
       </Switch>

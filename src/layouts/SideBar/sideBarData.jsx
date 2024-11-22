@@ -11,6 +11,7 @@ import {
   FilePptOutlined,
   RotateLeftOutlined,
   SplitCellsOutlined,
+  SortAscendingOutlined,
 } from "@ant-design/icons";
 
 export const sideBarList = [
@@ -76,4 +77,11 @@ export const sideBarList = [
   { key: "/pdf_parse", label: "PDF解析", icon: <FilePptOutlined />, level: 1 },
   { key: "/video_cutting", label: "视频切割", icon: <SplitCellsOutlined />, level: 1 },
   { key: "/video_desc", label: "视频标注", icon: <RotateLeftOutlined />, level: 1 },
+  { key: "/ar_pdf_view", label: "年报分析", icon: <FilePptOutlined />, level: 1 },
+  {
+    key: "/smart_training_assistant",
+    label: "智能培训助理",
+    icon: <SortAscendingOutlined />,
+    level: 1,
+  },
 ];
