@@ -17,7 +17,7 @@ const SmartTrainingAssistant = () => {
   const [markdownText, setMarkdownText] = useState("");
   const [previewVisible, setPreviewVisible] = useState(false);
 
-  axios.defaults.baseURL = "http://3.19.69.227:8002";
+  axios.defaults.baseURL = "/sta_api";
 
   // 解析参数相关状态
   const [params, setParams] = useState([
